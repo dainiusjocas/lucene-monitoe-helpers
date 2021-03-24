@@ -17,6 +17,11 @@
     </license>
   </licenses>
 
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
   <developers>
     <developer>
       <name>Dainius Jocas</name>
