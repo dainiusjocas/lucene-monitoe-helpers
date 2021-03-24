@@ -1,2 +1,2 @@
-# lucene-monitoe-helpers
+# lucene-monitor-helpers
 Missing pieces of the Lucene Monitor
