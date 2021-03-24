@@ -45,10 +45,10 @@
   </dependencies>
 
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/main</sourceDirectory>
     <resources>
       <resource>
-        <directory>src</directory>
+        <directory>src/main</directory>
       </resource>
     </resources>
   </build>

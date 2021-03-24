@@ -26,8 +26,7 @@ public class ScoringHighlightsMatch extends QueryMatch {
 
                 @Override
                 protected void matchQuery(String queryId, Query matchQuery, Map<String, String> metadata) throws IOException {
-
-                    Weight w = searcher.createWeight(matchQuery, ScoreMode.COMPLETE, 1);
+                    Weight w = searcher.createWeight(searcher.rewrite(matchQuery), ScoreMode.COMPLETE, 1);
                     for (LeafReaderContext ctx : searcher.getIndexReader().leaves()) {
                         for (int i = 0; i < ctx.reader().maxDoc(); i++) {
                             Matches matches = w.matches(ctx, i);
