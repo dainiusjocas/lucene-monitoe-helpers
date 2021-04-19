@@ -1,6 +1,12 @@
 # lucene-monitor-helpers
 Missing pieces of the Lucene Monitor
 
+## Install locally
+
+```shell
+mvn install -U
+```
+
 ## Release to Clojars
 
 ```
