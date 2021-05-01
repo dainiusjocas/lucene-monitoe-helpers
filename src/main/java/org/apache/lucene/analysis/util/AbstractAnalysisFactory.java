@@ -252,7 +252,8 @@ public abstract class AbstractAnalysisFactory {
      * Returns the resource's lines (with content treated as UTF-8)
      */
     protected final List<String> getLines(ResourceLoader loader, String resource) throws IOException {
-//        return WordlistLoader.getLines(loader.openResource(resource), StandardCharsets.UTF_8);
+        // LMGREP: support loading lines from arbitrary files
+        //        return WordlistLoader.getLines(loader.openResource(resource), StandardCharsets.UTF_8);
         File file = new File(resource);
         InputStream targetStream = new FileInputStream(file);
         return WordlistLoader.getLines(targetStream, StandardCharsets.UTF_8);
