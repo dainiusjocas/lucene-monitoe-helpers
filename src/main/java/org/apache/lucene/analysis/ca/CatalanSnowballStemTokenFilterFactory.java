@@ -2,7 +2,7 @@ package org.apache.lucene.analysis.ca;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.snowball.SnowballFilter;
-import org.apache.lucene.analysis.util.TokenFilterFactory;
+import org.apache.lucene.analysis.TokenFilterFactory;
 import org.tartarus.snowball.ext.CatalanStemmer;
 
 import java.util.Map;
@@ -18,6 +18,11 @@ public class CatalanSnowballStemTokenFilterFactory extends TokenFilterFactory {
         if (!args.isEmpty()) {
             throw new IllegalArgumentException("Unknown parameters: " + args);
         }
+    }
+
+    /** Default ctor for compatibility with SPI */
+    public CatalanSnowballStemTokenFilterFactory() {
+        throw defaultCtorException();
     }
 
     @Override

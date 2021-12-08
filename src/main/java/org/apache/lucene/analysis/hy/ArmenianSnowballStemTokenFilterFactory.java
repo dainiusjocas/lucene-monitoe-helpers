@@ -2,7 +2,7 @@ package org.apache.lucene.analysis.hy;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.snowball.SnowballFilter;
-import org.apache.lucene.analysis.util.TokenFilterFactory;
+import org.apache.lucene.analysis.TokenFilterFactory;
 import org.tartarus.snowball.ext.ArmenianStemmer;
 
 import java.util.Map;
@@ -30,6 +30,10 @@ public class ArmenianSnowballStemTokenFilterFactory extends TokenFilterFactory {
         if (!args.isEmpty()) {
             throw new IllegalArgumentException("Unknown parameters: " + args);
         }
+    }
+
+    public ArmenianSnowballStemTokenFilterFactory() {
+        throw defaultCtorException();
     }
 
     @Override

@@ -2,7 +2,7 @@ package org.apache.lucene.analysis.ro;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.snowball.SnowballFilter;
-import org.apache.lucene.analysis.util.TokenFilterFactory;
+import org.apache.lucene.analysis.TokenFilterFactory;
 import org.tartarus.snowball.ext.RomanianStemmer;
 
 import java.util.Map;
@@ -18,6 +18,10 @@ public class RomanianSnowballStemTokenFilterFactory extends TokenFilterFactory {
         if (!args.isEmpty()) {
             throw new IllegalArgumentException("Unknown parameters: " + args);
         }
+    }
+
+    public RomanianSnowballStemTokenFilterFactory() {
+        throw defaultCtorException();
     }
 
     @Override

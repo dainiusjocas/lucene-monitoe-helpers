@@ -3,7 +3,7 @@ package org.apache.lucene.analysis.fi;
 import fi.evident.raudikko.Analyzer;
 import fi.evident.raudikko.Morphology;
 import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.util.TokenFilterFactory;
+import org.apache.lucene.analysis.TokenFilterFactory;
 import org.apache.lucene.analysis.fi.RaudikkoTokenFilter;
 
 import java.util.Map;
@@ -34,6 +34,10 @@ public class RaudikkoTokenFilterFactory extends TokenFilterFactory {
         if (!args.isEmpty()) {
             throw new IllegalArgumentException("Unknown parameters: " + args);
         }
+    }
+
+    public RaudikkoTokenFilterFactory() {
+        throw defaultCtorException();
     }
 
     @Override

@@ -2,7 +2,7 @@ package org.apache.lucene.analysis.da;
 
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.analysis.snowball.SnowballFilter;
-import org.apache.lucene.analysis.util.TokenFilterFactory;
+import org.apache.lucene.analysis.TokenFilterFactory;
 import org.tartarus.snowball.ext.DanishStemmer;
 
 import java.util.Map;
@@ -18,6 +18,10 @@ public class DanishSnowballStemTokenFilterFactory extends TokenFilterFactory {
         if (!args.isEmpty()) {
             throw new IllegalArgumentException("Unknown parameters: " + args);
         }
+    }
+
+    public DanishSnowballStemTokenFilterFactory() {
+        throw defaultCtorException();
     }
 
     @Override
