@@ -4,7 +4,7 @@
 
   <groupId>lt.jocas</groupId>
   <artifactId>lucene-monitor-helpers</artifactId>
-  <version>0.2.2</version>
+  <version>0.2.3-SNAPSHOT</version>
   <name>lucene-monitor-helpers</name>
 
   <description>Missing classes of the Lucene Monitor</description>
@@ -61,7 +61,7 @@
   <scm>
     <connection>scm:git:git://github.com/dainiusjocas/lucene-monitor-helpers.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/dainiusjocas/lucene-monitor-helpers.git</developerConnection>
-    <tag>lucene-monitor-helpers-0.2.2</tag>
+    <tag>main</tag>
     <url>https://github.com/dainiusjocas/lucene-monitor-helpers</url>
   </scm>
 
